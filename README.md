@@ -14,16 +14,16 @@ This exercise is meant showcase your creativity and talent in problem solving ag
 
 ## Requirements
 
-* Login to the app via email and password
-* Restrict access to valid a User
-* Once logged in show the details of the user on the page
-* Authorized users can check their account balance
-* Allow the user to change their details
+* Login to the app via email and password x
+* Restrict access to valid a User x
+* Once logged in show the details of the user on the page x
+* Authorized users can check their account balance x
+* Allow the user to change their details x
 * lowdb (DB) -> https://github.com/typicode/lowdb
 * node.js -> http://nodejs.org/ 
 
 ## Bonus Points
 
-* Fully responsive UI
+* Fully responsive UI x
 * Unit Tests of the API
 * Functional Tests of the UI
