@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the Profile 1`] = `
+<div>
+  <div
+    class="w-full"
+  >
+    <nav
+      class="bg-white border-gray-200 dark:bg-white dark:border dark:border-2"
+    >
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+      >
+        <a
+          class="flex items-center justify-start"
+          href="/"
+        >
+          <img
+            alt="smart pump Logo"
+            class="h-8"
+            data-testid="logo"
+            height="42"
+            src="logo.png"
+            width="42"
+          />
+        </a>
+        <button
+          aria-controls="navbar-default"
+          aria-expanded="false"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          data-collapse-toggle="navbar-default"
+          data-testid="menu-nav-toggle"
+          type="button"
+        >
+          <span
+            class="sr-only"
+          >
+            Open main menu
+          </span>
+          <svg
+            aria-hidden="true"
+            class="w-5 h-5"
+            fill="none"
+            viewBox="0 0 17 14"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1 1h15M1 7h15M1 13h15"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            />
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </div>
+</div>
+`;
