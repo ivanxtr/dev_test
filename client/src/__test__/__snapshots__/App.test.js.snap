@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the App 1`] = `
+<div>
+  <div
+    class="w-full h-full flex items-center flex-col justify-center"
+  >
+    <img
+      alt="smart pump logo"
+      class="mx-auto w-32 h-32"
+      src="logo.png"
+    />
+    <form
+      class="mx-auto md:min-w-96 min-w-72"
+    >
+      <div
+        class="mb-5"
+      >
+        <label
+          class="block mb-2 text-sm font-medium text-black dark:text-black"
+          for="email"
+        >
+          Your email
+        </label>
+        <input
+          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-white dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          id="email"
+          placeholder="name@flowbite.com"
+          required=""
+          type="email"
+        />
+      </div>
+      <div
+        class="mb-5"
+      >
+        <label
+          class="block mb-2 text-sm font-medium text-gray-900 dark:text-black"
+          for="password"
+        >
+          Your password
+        </label>
+        <input
+          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-white dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          data-testid="password"
+          id="password"
+          required=""
+          type="password"
+        />
+      </div>
+      <button
+        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+        data-testid="submit"
+        type="submit"
+      >
+        Log in
+      </button>
+    </form>
+  </div>
+</div>
+`;

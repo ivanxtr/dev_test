@@ -7,7 +7,7 @@
   "scripts": {
     "start": "NODE_ENV=PROD node index.js",
     "dev": "NODE_ENV=DEV nodemon --ignore 'db.json' index.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha **/*.test.js && mocha --reporter json > reports/test-results.json",
     "format": "prettier --write ."
   },
   "author": "",
@@ -23,7 +23,10 @@
     "prettier": "^3.3.3"
   },
   "devDependencies": {
-    "nodemon": "^3.1.4"
+    "chai": "^5.1.1",
+    "mocha": "^10.7.3",
+    "nodemon": "^3.1.4",
+    "supertest": "^7.0.0"
   },
   "engines": {
     "node": "18.20.4"

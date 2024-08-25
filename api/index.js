@@ -20,10 +20,12 @@ const app = express()
 const __dirname = path.resolve()
 
 app.use(cookieParser())
-app.use(cors({
-  origin: ['http://localhost:8080', 'http://localhost:3000'],
-  credentials: true,
-}))
+app.use(
+  cors({
+    origin: ['http://localhost:8080', 'http://localhost:3000'],
+    credentials: true,
+  })
+)
 app.locals.db = db
 
 app.use(express.json())
@@ -56,19 +58,22 @@ passport.use(
   })
 )
 
-passport.serializeUser(function(user, done) {
-  done(null, user);
-});
+passport.serializeUser(function (user, done) {
+  done(null, user)
+})
 
-passport.deserializeUser(function(id, done) {
-  done(null, true);
-});
+passport.deserializeUser(function (id, done) {
+  done(null, true)
+})
 app.use('/auth', auth)
 app.use('/api', api)
-app.use(express.static(path.join(__dirname, '../client/build')));
-app.get('*', (req, res) => res.sendFile(path.resolve('../client', 'build', 'index.html')));
-
+app.use(express.static(path.join(__dirname, '../client/build')))
+app.get('*', (req, res) =>
+  res.sendFile(path.resolve('../client', 'build', 'index.html'))
+)
 
 app.listen(8080, () => {
   console.log('Server is running on port 8080')
 })
+
+export default app
